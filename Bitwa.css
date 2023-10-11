@@ -1,0 +1,232 @@
+#menuToggle {
+    display: none;
+}
+
+.cross-close {
+	width: 15%;
+	height 15%;
+	font-size: 5vw;
+}
+.menu-link {
+    background-color: #8BA093;
+	font-size: 20px;
+    color: #585653;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+	position: fixed;
+	right: 10px;
+}
+.page.light-theme .menu-link {
+    background-color: #8BA093;
+	font-size: 20px;
+    color: #585653;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+	position: fixed;
+	right: 10px;
+}	
+.page.dark-theme .menu-link {
+    background-color: #3D423C;
+    color: #AF967E;
+}
+
+   #menu a {
+    text-decoration: none;
+    color: #585653;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	}
+    .page.dark-theme #menu a {
+        color: #AF967E;
+    }
+    .page.light-theme  #menu a {
+        color: #585653;
+    }
+	
+	#menu > ul > li > a:hover{
+		border-bottom: 1px solid #d3efdf;
+	}
+  #menu {
+    display: none;
+    position: fixed;
+    top: 0; 
+    right: 0;
+    bottom:0;
+    background-color: #8BA093;
+    border: 1px solid #766D62;
+    text-decoration: none;
+    padding: 50px;
+}
+.page.light-theme  #menu {
+    background-color: #8BA093;
+    border: 1px solid #766D62;
+}
+.page.dark-theme  #menu {
+    background-color: #3D423C;
+    border: 1px solid #AF967E;
+}
+.page.dark-theme #menu ul li.m a {
+    color: #AF967E; 
+}
+#menu:target {
+    display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+    }
+#menuToggle:checked + label + #menu {
+    display: block;
+}
+
+
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #8BA093;
+    color: #585653;
+    padding: 10px;
+    border-radius: 50%; 
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+}
+.page.light-theme .menu-toggle {
+    background-color: #8BA093;
+    color: #585653;
+}
+.page.dark-theme .menu-toggle {
+    background-color: #8BA093;
+    color: #AF967E;
+}
+
+.m {
+    font-size: 35px;
+    color: #585653;
+    text-decoration: none;
+}
+.page.light-theme .m {
+    color: #585653;
+}
+.page.dark-theme .m {
+    color: #AF967E;
+}
+.page {
+    background-color: #d3efdf;
+}
+.page.light-theme {
+    background-color: #d3efdf;
+}
+.page.dark-theme {
+    background-color:  #2A3728;
+    
+}
+
+.name {
+    font-family: 'Oswald', sans-serif;
+    width: 600px;
+    padding-left: 20px;
+    color: #362f2d;
+}
+.page.light-theme .name {
+    color: #362f2d;
+}
+.page.dark-theme .name {
+    color: #9F9993;
+}
+
+.nag {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    padding: 8px;
+    color: #585653;
+    padding-left: 5%;
+}
+.page.light-theme .nag {
+    color: #585653;
+}
+.page.dark-theme .nag {
+    color: #585653;
+}
+
+.tek {
+    font-family: 'Oswald', sans-serif;
+
+    padding: 20px;
+    padding-right: 15px;
+    color: #766D62;
+    font-size: 25px;
+    flex: 1;
+}
+.page.light-theme .tek {
+    color: #766D62;
+}
+.page.dark-theme .tek {
+    color: #766D62;
+}
+.tek2 {
+    font-family: 'Oswald', sans-serif;
+    
+    color: #766D62;
+    font-size: 20px;
+  
+}
+.page.light-theme .tek2 {
+    color: #766D62;
+}
+.page.dark-theme .tek2 {
+    color: #766D62;
+}
+.wstep {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2%;
+}
+.pdb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2%;
+}
+.b1 {
+    flex: 1;
+    text-align: right; 
+    padding: 20px;
+    padding-right: 15%;
+}
+.b2 {
+    flex: 1;
+    text-align: left; 
+    padding: 20px;
+    padding-left: 3%;
+}
+.b3 {
+    padding: 15px;
+}
+.b4 {
+    flex: 1;
+    text-align: right; 
+    padding: 20px;
+    padding-right: 7%;
+}
+.theme-button {
+    position: fixed;
+    top: 90px;
+    right: 80px;
+    background-color: #8BA093;
+    color: #585653;
+    padding: 10px;
+    border-radius: 10%; 
+   cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    outline: none;
+    border: none; 
+}
+.page.dark-theme .theme-button {
+    background-color: #3D423C;
+    color: #AF967E;
+}
