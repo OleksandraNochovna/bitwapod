@@ -1,3 +1,8 @@
+* {
+	transition: 500ms;	
+}
+
+
 #menuToggle {
     display: none;
 }
@@ -7,30 +12,7 @@
 	height 15%;
 	font-size: 5vw;
 }
-.menu-link {
-    background-color: #8BA093;
-	font-size: 20px;
-    color: #585653;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-	position: fixed;
-	right: 10px;
-}
-.page.light-theme .menu-link {
-    background-color: #8BA093;
-	font-size: 20px;
-    color: #585653;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-	position: fixed;
-	right: 10px;
-}	
-.page.dark-theme .menu-link {
-    background-color: #3D423C;
-    color: #AF967E;
-}
+
 
    #menu a {
     text-decoration: none;
@@ -160,6 +142,10 @@
     font-size: 25px;
     flex: 1;
 }
+
+.zdj {
+	border-radius: 10px;	
+}
 .page.light-theme .tek {
     color: #766D62;
 }
@@ -191,7 +177,7 @@
     align-items: center;
     padding-left: 2%;
 }
-.b1 {
+.b1 {	
     flex: 1;
     text-align: right; 
     padding: 20px;
@@ -205,6 +191,14 @@
 }
 .b3 {
     padding: 15px;
+
+	   overflow: hidden;
+}
+.b3 img {
+    border-radius: 10px;
+	display: block;
+	  height: auto;
+	   width: 100%; 
 }
 .b4 {
     flex: 1;
@@ -214,8 +208,7 @@
 }
 .theme-button {
     position: fixed;
-    top: 90px;
-    right: 80px;
+   
     background-color: #8BA093;
     color: #585653;
     padding: 10px;
@@ -225,8 +218,72 @@
     font-size: 20px;
     outline: none;
     border: none; 
+	width: 50px;
+	top: 10px;
+  right: 80px;
+	 height: 48px;
+	
+
 }
 .page.dark-theme .theme-button {
     background-color: #3D423C;
     color: #AF967E;
 }
+.lang {
+	position: fixed;
+  
+    background-color: #8BA093;
+    color: #585653;
+    padding: 10px;
+    border-radius: 10%; 
+   cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    outline: none;
+    border: none; 
+	width: 75px;
+	top: 10px;
+  right: 140px;
+  height: 48px;
+	
+}
+.page.dark-theme .lang {
+    background-color: #3D423C;
+    color: #AF967E;
+}
+.menu-link {
+    background-color: #8BA093;
+	font-size: 20px;
+    color: #585653;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+	position: fixed;
+	 top: 10px;
+  right: 20px;
+    height: 28px;
+	
+}
+.page.light-theme .menu-link {
+    background-color: #8BA093;
+	font-size: 20px;
+    color: #585653;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+	position: fixed;
+	
+}	
+.page.dark-theme .menu-link {
+    background-color: #3D423C;
+    color: #AF967E;
+}
+.container  {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  top: 10px;
+  right: 20px;
+}
+
